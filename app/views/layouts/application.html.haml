@@ -1,0 +1,48 @@
+!!!
+/[if lt IE 7 ] <html lang="en" class="no-js ie6">
+/[if IE 7 ] <html lang="en" class="no-js ie7">
+/[if IE 8 ] <html lang="en" class="no-js ie8">
+/[if IE 9 ] <html lang="en" class="no-js ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "UTF-8"}
+      / Page title
+      %title justNeph - Internet Entertainer
+      / Meta tags
+      / Set the viewport to the device's width
+      %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+      / Page icons
+      = stylesheet_link_tag "application", :media => "all"
+      = javascript_include_tag "application"
+      %link{:href => "favicon.ico", :rel => "shortcut icon"}/
+      / Stylesheets
+      = stylesheet_link_tag "base"
+      / %style{:media => "screen", :type => "text/css"}
+      /   @import "styles/base.css";
+      / Print stylesheet
+      = stylesheet_link_tag "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"
+      / jQuery and Modernizr are located here, other scripts files located at the bottom of the page
+      = javascript_include_tag "modernizr.min.js"
+      / Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+      = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"
+      :javascript
+        window.jQuery || document.write('\x3C/script>')
+  %body.page-frontpage
+    / JS notice - We'll show it if js is disabled
+    %p#jsnotice
+      Javascript is currently disabled. This site requires Javascript to function correctly. Please
+      = succeed "!" do
+        %a{:href => "http://enable-javascript.com/"} enable Javascript in your browser
+    / /JS notice
+
+    = render "application/header"
+
+    = yield
+
+    = render "application/bottom_widgets"
+
+    = render "application/footer"
+
+    = render "application/scripts"

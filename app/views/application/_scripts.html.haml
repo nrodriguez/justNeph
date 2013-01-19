@@ -1,0 +1,10 @@
+/ Scripts
+- @scripts = include_scripts
+- @scripts.each do |script|
+  = javascript_include_tag script
+/[if lt IE 9 ]
+  = javascript_include_tag "plugins/PIE/PIE.js"
+  :javascript
+    jQuery('.team-member-img, .team-member-img img, #pager li, #pager a, #pager span').each(function() {
+    PIE.attach(this);
+  });

@@ -1,0 +1,3 @@
+Sass::Plugin.options[:property_syntax] = :old
+Sass::Plugin.remove_template_location("./public/stylesheets/sass")
+Sass::Plugin.add_template_location("./app/assets/stylesheets")

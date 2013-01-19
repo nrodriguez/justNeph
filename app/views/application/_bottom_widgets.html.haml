@@ -1,0 +1,59 @@
+/ Bottom widgets
+#bottom-widgets.clearfix
+  .container_12.alt-widgets
+    / Row
+    .grid_4
+      %nav.widget-container.widget-gallery
+        %h2.widget-heading Gallery widget
+        .widget-content
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
+            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+    / /Row
+    / Row
+    .grid_4
+      %section.widget-container.widget-tweets
+        %h2.widget-heading Recent tweets
+        .widget-content
+    / /Row
+    / Row
+    .grid_4
+      %section.widget-container.widget-contact-form
+        %h2.widget-heading Contact form
+        .widget-content
+          / Contact form
+          %form#contact-form-widget{:action => "sendmail.php", :method => "post"}
+            %p
+              %label{:for => "cf_name"}
+                Name
+                %span.required (Required *)
+              %input#cf_name.required{:name => "cf_name", :required => "", :type => "text"}/
+            %p
+              %label{:for => "cf_email"}
+                Email
+                %span.required (Required *)
+              %input#cf_email.required.email{:name => "cf_email", :required => "", :type => "email"}/
+            %p
+              %label{:for => "cf_message"} Message
+              %textarea#cf_message.required{:name => "cf_message", :required => "", :rows => "5"}
+            %p
+              %input{:type => "submit", :value => "Send message"}/
+          .form-sent
+          / /Contact form
+    / /Row
+/ /Bottom widgets

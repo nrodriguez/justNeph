@@ -1,0 +1,559 @@
+// Widgets ---------------------------------------------------------------------
+ //
+
+// Base structure
+ //
+
+.widget-container
+  clear: both
+  overflow: hidden
+  padding: 0 0 0 20px
+  margin: 0 0 50px
+  .widget-heading
+    text-indent: 20px
+    font-size: 24px
+    border-bottom: 1px solid #D5CAA8
+    margin: 0
+    text-shadow: 1px 1px 0 #fff
+
+// Widgets header
+
+// Widget content
+
+.widget-content
+  overflow: hidden
+  text-shadow: 1px 1px 0 #F5F2E8
+  border-top: 1px solid #F5F2E9
+  padding: 20px 0 0 0
+  ul
+    margin: 0
+    padding: 0
+    border-bottom: 1px dashed #F5F2E9
+  li
+    clear: both
+    margin: 0
+    padding: 0
+    list-style: none
+    background: none
+    position: relative
+    border-bottom: 1px dashed #D5CAA8
+    border-top: 1px dashed #F5F2E9
+
+.widget-container .widget-content li:hover
+  background: url(sidebar_gradient_bg.png) left repeat-y
+
+.widget-content li:first-child
+  border-top: none!Important
+
+.widget-container .widget-content li a
+  padding: 6px 0 6px 20px
+  display: block
+  color: #333
+
+// Widget hint
+
+.widget-hint
+  float: right
+  position: absolute
+  right: 0
+  top: 50%
+  font-size: 80%
+  line-height: 26px
+  margin-top: -13px
+  padding: 0 5px
+  background: url(trans_bg_white.png)
+  font-style: normal!Important
+  border-radius: 3px
+
+.widget-container .widget-hint a
+  padding: 0!Important
+  background: none!Important
+  font-style: normal
+  &:hover
+    padding: 0!Important
+    background: none!Important
+    font-style: normal
+
+// Widgets specific styles -----------------------------------------------------
+ //
+
+// Address widget
+ //
+
+.widget-contacts-info
+  li
+    padding: 6px 0 6px 20px
+  span
+    margin-right: 10px
+  .widget-content li a
+    display: inline
+    padding: 0
+
+// Advertisement widget
+ //
+
+.widget-ads
+  .widget-content!
+  .align-left, .align-right
+    margin: 0 0 10px
+    overflow: visible
+
+.widget-banner
+  margin: 0 0 10px 0
+  padding: 5px
+  background: url(trans_bg_white.png)
+
+// Grid 3
+
+.grid_3 .widget-banner
+  clear: both
+  float: none
+  margin: 0 auto 10px auto
+  text-align: center
+  display: block
+
+.widget-banner
+  &:hover
+    background: url(trans_bg_black.png)
+  *
+    margin: 0 auto
+    float: none
+
+// Banners sizes
+
+.banner-125!
+
+.banner-190
+  clear: both
+  float: none
+  margin: 0 auto 10px auto
+  text-align: center
+  display: block
+
+// Archive widget
+ //
+
+.widget-archive, .widget-blogroll
+  .widget-content li a
+    padding-left: 30px
+    background: url(widgets.png) 0 -1390px no-repeat
+  li a:hover
+    background-position: 0 -1440px
+
+// Blogroll widget
+ //
+
+// Calendar widget
+ //
+
+.widget-calendar!
+
+.calendar-holder
+  background: url(trans_bg_white.png)
+  padding: 5px
+  &:hover
+    background: url(trans_bg_black.png)
+
+.widget-calendar
+  caption
+    font-size: 120%
+  table
+    background: url(trans_bg_white.png)
+    border: none
+    width: 100%
+    margin: 0
+  th, td
+    margin: 0
+    padding: 3px
+    text-align: center
+  th
+    line-height: 20px
+  table tfoot
+    line-height: 20px
+    td
+      text-align: left
+    a
+      color: #fff
+
+// Categories widget
+ //
+
+.widget-categories
+  .widget-content li a
+    padding-left: 30px
+    background: url(widgets.png) 0 -1390px no-repeat
+  li a:hover
+    background-position: 0 -1440px
+
+// Comments widget
+ //
+
+.widget-comments
+  .widget-content li a
+    padding-left: 30px
+    background: url(widgets.png) 0 7px no-repeat
+  li a:hover
+    background-position: 0 -43px
+
+// Contact form
+ //
+
+.widget-contact-form!
+
+#contact-form-widget
+  p
+    margin: 0 0 10px 0
+  input
+    width: 90%
+    &[type=submit]
+      width: auto
+
+// Gallery widget
+ //
+
+.widget-gallery a
+  display: inline-block
+  margin: 0 5px 5px 5px
+  background: url(trans_bg_white.png)
+  &:hover
+    background: url(trans_bg_black.png)
+  &.gallery-last!
+
+// Grid 3
+
+.grid_3 .widget-gallery .widget-content
+  padding-left: 10px
+
+// Newsletter widget
+ //
+
+.widget-newsletter
+  form
+    margin: 20px 0
+  input
+    width: 55%
+    float: left
+    &[type=submit]
+      float: right
+      width: 30%
+      text-align: center
+      padding-left: 0
+      padding-right: 0
+
+// Recent posts
+ //
+
+.widget-recent-posts
+  ul
+    margin-top: -10px
+  li
+    overflow: hidden
+    padding: 10px 0!Important
+    line-height: 150%
+  .img-holder
+    float: left
+    margin: 0 15px 0 0
+    background: url(trans_bg_white.png) !Important
+  li:hover .img-holder
+    background: url(trans_bg_black.png) !Important
+
+.post-link
+  margin: 0 0 5px 0
+  display: block
+
+// Recent posts simple
+ //
+
+.widget-posts-simple
+  .widget-content li a
+    padding-left: 30px
+    background: url(widgets.png) 0 -194px no-repeat
+  li a:hover
+    background-position: 0 -244px
+
+// Search widget
+ //
+
+.widget-search
+  label
+    display: none
+  input
+    width: 55%
+    float: left
+    &[type=submit]
+      float: right
+      width: 30%
+      text-align: center
+      padding-left: 0
+      padding-right: 0
+
+// Tags widget
+ //
+
+.widget-tags
+  ul
+    margin: 0
+    padding: 0
+    border: none
+  li
+    list-style: none
+    margin: 0 10px 10px 0
+    padding: 0
+    border: none
+    float: left
+    clear: none
+    line-height: 150%
+  .widget-content
+    li a
+      display: block
+      padding: 3px 5px
+      background: url(trans_bg_black.png)
+      font-size: 85%
+      font-weight: bold
+      color: #fff
+      text-shadow: 0 -1px 0 #333333
+      border-radius: 3px
+    a:hover
+      background: url(trans_bg_white.png)
+      color: #333
+      text-shadow: 1px 1px 0 #fff
+
+// Tags without float
+
+.tags
+  .widget-content li a
+    padding-left: 30px
+    background: url(widgets.png) 0 -1190px no-repeat !Important
+  ul li a:hover
+    background-position: 0 -1240px !Important
+
+// Text widget
+ //
+
+.widget-text!
+
+// Map widget
+ //
+
+.widget-contacts-location .map-holder
+  background: url(trans_bg_white.png)
+  padding: 5px
+  &:hover
+    background: url(trans_bg_black.png)
+
+// Tweets last widget
+ //
+
+.widget-last-tweet
+  .widget-heading
+    background: none
+    text-align: left
+    border: none
+    height: 30px
+    margin-bottom: 20px
+  .widget-content
+    background: url(widgets.png) 0 -785px no-repeat
+    min-height: 50px
+    border: none
+    padding: 0
+    &:hover
+      background-position: 0 -885px !Important
+    ul
+      border: none
+    li
+      border: none
+      padding: 20px 0
+      margin: 0 0 0 70px
+      &:hover
+        background: none
+      a
+        padding: 0!Important
+    .tweet_text
+      font-size: 140%
+      a
+        display: inline
+
+// Tweets recent widget
+ //
+
+.widget-tweets
+  .widget-content
+    ul!
+    li
+      line-height: 170%
+      background: url(widgets.png) 0 -385px no-repeat !Important
+      padding: 10px 0 10px 30px
+  li:hover
+    background-position: 0 -485px !Important
+  .widget-content li a
+    padding: 0!Important
+    display: inline!Important
+  .tweet_time
+    display: block
+
+// Alternative area widgets ----------------------------------------------------
+ //
+
+.alt-widgets
+  .widget-container
+    margin: 0 0 40px 0
+  .widget-heading
+    background: url(separator.png) bottom repeat-x transparent !Important
+    color: #EAE3CE
+    text-align: left
+    border: none
+    text-shadow: 0 -1px 0 black
+    font-size: 20px
+  .widget-content
+    color: #fff
+    border: none
+    text-shadow: 0 -1px 0 #333333
+  .widget-container .widget-content li a
+    color: #EAE3CE
+  .widget-content
+    label
+      color: #EAE3CE
+    ul
+      border: none
+    li
+      border: none
+      background: url(separator.png) bottom repeat-x transparent !Important
+  .widget-hint
+    background: url(trans_bg_black.png)
+    color: #fff
+    a
+      color: #fff!Important
+  .widget-contacts-info span
+    color: #EAE3CE!Important
+  .widget-ads!
+  .widget-banner
+    background: url(trans_bg_black.png)
+    &:hover
+      background: url(trans_bg_white.png)
+  .widget-archive li a, .widget-blogroll li a
+    background: url(widgets.png) 0 -1490px no-repeat
+    &:hover
+      background-position: 0 -1540px
+  .widget-calendar!
+  .calendar-holder
+    background: url(trans_bg_black.png)
+    &:hover
+      background: url(trans_bg_white.png)
+  .widget-calendar
+    table
+      background: url(trans_bg_black.png) !Important
+    th
+      border-bottom: 1px solid #000
+    tbody tr
+      &.alt, &:nth-child(2n+1)
+        background: #333
+  .widget-categories li a
+    background: url(widgets.png) 0 -1490px no-repeat
+    &:hover
+      background-position: 0 -1540px
+  .widget-comments li a
+    background: url(widgets.png) 0 -94px no-repeat
+    &:hover
+      background-position: 0 -144px
+  .widget-gallery a
+    background: url(trans_bg_black.png)
+    &:hover
+      background: url(trans_bg_white.png)
+  .widget-newsletter!
+  .widget-recent-posts
+    li
+      .img-holder
+        background: url(trans_bg_black.png) !Important
+      &:hover .img-holder
+        background: url(trans_bg_white.png) !Important
+    .post-created
+      color: #ccc
+  .widget-posts-simple li a
+    background: url(widgets.png) 0 -294px no-repeat
+    &:hover
+      background-position: 0 -344px
+  .widget-search!
+  .widget-tags
+    li
+      border: none
+    a
+      background: url(trans_bg_black.png)
+      &:hover
+        background: url(trans_bg_white.png)
+        text-shadow: 0 -1px 0 #333333
+  .tags ul li a
+    background: url(widgets.png) 0 -1290px no-repeat !Important
+    &:hover
+      background-position: 0 -1340px !Important
+  .widget-text!
+  .widget-contacts-location .map-holder
+    background: url(trans_bg_black.png)
+    &:hover
+      background: url(trans_bg_white.png)
+  .widget-last-tweet
+    li
+      background: none!Important
+    .widget-content
+      background: url(widgets.png) 0 -985px no-repeat
+      &:hover
+        background-position: 0 -1085px !Important
+  .widget-tweets li
+    background: url(widgets.png) 0 -585px no-repeat !Important
+    &:hover
+      background-position: 0 -685px !Important
+
+// Widgets specific styles -----------------------------------------------------
+ //
+
+// Address widget
+ //
+
+// Advertisement widget
+ //
+
+// Archive widget
+ //
+
+// Blogroll widget
+ //
+
+// Calendar widget
+ //
+
+// Categories widget
+ //
+
+// Comments widget
+ //
+
+// Gallery widget
+ //
+
+// Newsletter widget
+ //
+
+// Recent posts
+ //
+
+// Recent posts simple
+ //
+
+// Search widget
+ //
+
+// Tags widget
+ //
+
+// Tags without float
+
+// Text widget
+ //
+
+// Map widget
+ //
+
+// Tweets last widget
+ //
+
+// Tweets recent widget
+ //
