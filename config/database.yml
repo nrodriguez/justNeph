@@ -39,10 +39,10 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: justNeph
+  database: db451538882
   pool: 5
-  username: root
-  password: password
-  host: 127.0.0.1
+  host: db451538882.db.1and1.com
   socket: /tmp/mysql.sock
   port: 3306
+  username: dbo451538882
+  password: <%= SymmetricEncryption.try_decrypt "#{File.read('prod_password.txt')}" %>
