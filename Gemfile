@@ -7,8 +7,6 @@ gem 'rails', '3.2.11'
 
 gem 'mysql2'
 gem 'haml'
-gem 'sass'
-gem 'sass-rails'
 gem 'thin'
 
 #Database Encryption
