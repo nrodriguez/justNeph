@@ -17,12 +17,6 @@
       = stylesheet_link_tag "application", :media => "all"
       = javascript_include_tag "application"
       %link{:href => "favicon.ico", :rel => "shortcut icon"}/
-      / Stylesheets
-      = stylesheet_link_tag "base"
-      / %style{:media => "screen", :type => "text/css"}
-      /   @import "styles/base.css";
-      / Print stylesheet
-      = stylesheet_link_tag "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"
       / jQuery and Modernizr are located here, other scripts files located at the bottom of the page
       = javascript_include_tag "modernizr.min.js"
       / Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
