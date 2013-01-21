@@ -46,7 +46,18 @@ JustNeph::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += %w( modernizr.min.js ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js )
+  config.assets.precompile += %w( modernizr.min.js 
+    ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+    jquery-ui.min.js 
+    jquery.easing.1.3.js 
+    plugins/nivo/jquery.nivo.slider.pack.js
+    plugins/prettyphoto/jquery.prettyPhoto.js
+    plugins/tipsy/jquery.tipsy.js 
+    plugins/video-js/video.js 
+    plugins/tweet/jquery.tweet.js
+    plugins/jquery-validate/jquery.validate.min.js 
+    scripts.js 
+  )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
