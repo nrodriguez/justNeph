@@ -1,113 +1,381 @@
-/*
-Syntax error: Illegal property syntax: can't use new syntax when :property_syntax => :old is set.
-        on line 8 of ./app/assets/stylesheets/widgets.sass
+.widget-container {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  margin: 0 0 50px; }
+  .widget-container .widget-heading {
+    text-indent: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #d5caa8;
+    margin: 0;
+    text-shadow: 1px 1px 0 white; }
 
-3: 
-4: // Base structure
-5:  //
-6: 
-7: .widget-container
-8:   clear: both
-9:   overflow: hidden
-10:   padding: 0 0 0 20px
-11:   margin: 0 0 50px
-12:   .widget-heading
-13:     text-indent: 20px
+.widget-content {
+  overflow: hidden;
+  text-shadow: 1px 1px 0 #f5f2e8;
+  border-top: 1px solid #f5f2e9;
+  padding: 20px 0 0 0; }
+  .widget-content ul {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dashed #f5f2e9; }
+  .widget-content li {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: none;
+    position: relative;
+    border-bottom: 1px dashed #d5caa8;
+    border-top: 1px dashed #f5f2e9; }
 
-Backtrace:
-./app/assets/stylesheets/widgets.sass:8
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/prop_node.rb:107:in `check!'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:178:in `visit_prop'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:30:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:44:in `with_parent'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:29:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:192:in `visit_rule'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:30:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:44:in `with_parent'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:29:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:56:in `visit_root'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:6:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:22:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:263:in `block in render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/util.rb:373:in `silence_sass_warnings'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:263:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:81:in `update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:54:in `check_for_updates'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/rack.rb:51:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/etag.rb:23:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/conditionalget.rb:25:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/session/abstract/id.rb:210:in `context'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/session/abstract/id.rb:205:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__57148764__call__883543391__callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/methodoverride.rb:21:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/runtime.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/lock.rb:15:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/content_length.rb:14:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:81:in `block in pre_process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:79:in `catch'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:79:in `pre_process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:54:in `process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:39:in `receive_data'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/backends/base.rb:63:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/server.rb:159:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/handler/thin.rb:13:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/server.rb:268:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/server.rb:70:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:55:in `block in <top (required)>'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:50:in `tap'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:50:in `<top (required)>'
-script/rails:6:in `require'
-script/rails:6:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Illegal property syntax: can't use new syntax when :property_syntax => :old is set.\A         on line 8 of ./app/assets/stylesheets/widgets.sass\A \A 3: \A 4: // Base structure\A 5:  //\A 6: \A 7: .widget-container\A 8:   clear: both\A 9:   overflow: hidden\A 10:   padding: 0 0 0 20px\A 11:   margin: 0 0 50px\A 12:   .widget-heading\A 13:     text-indent: 20px"; }
+.widget-container .widget-content li:hover {
+  background: url(sidebar_gradient_bg.png) left repeat-y; }
+
+.widget-content li:first-child {
+  border-top: none !important; }
+
+.widget-container .widget-content li a {
+  padding: 6px 0 6px 20px;
+  display: block;
+  color: #333333; }
+
+.widget-hint {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 80%;
+  line-height: 26px;
+  margin-top: -13px;
+  padding: 0 5px;
+  background: url(trans_bg_white.png);
+  font-style: normal !important;
+  border-radius: 3px; }
+
+.widget-container .widget-hint a {
+  padding: 0 !important;
+  background: none !important;
+  font-style: normal; }
+  .widget-container .widget-hint a:hover {
+    padding: 0 !important;
+    background: none !important;
+    font-style: normal; }
+
+.widget-contacts-info li {
+  padding: 6px 0 6px 20px; }
+.widget-contacts-info span {
+  margin-right: 10px; }
+.widget-contacts-info .widget-content li a {
+  display: inline;
+  padding: 0; }
+
+.widget-ads .align-left, .widget-ads .align-right {
+  margin: 0 0 10px;
+  overflow: visible; }
+
+.widget-banner {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  background: url(trans_bg_white.png); }
+
+.grid_3 .widget-banner {
+  clear: both;
+  float: none;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block; }
+
+.widget-banner:hover {
+  background: url(trans_bg_black.png); }
+.widget-banner * {
+  margin: 0 auto;
+  float: none; }
+
+.banner-190 {
+  clear: both;
+  float: none;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block; }
+
+.widget-archive .widget-content li a, .widget-blogroll .widget-content li a {
+  padding-left: 30px;
+  background: url(widgets.png) 0 -1390px no-repeat; }
+.widget-archive li a:hover, .widget-blogroll li a:hover {
+  background-position: 0 -1440px; }
+
+.calendar-holder {
+  background: url(trans_bg_white.png);
+  padding: 5px; }
+  .calendar-holder:hover {
+    background: url(trans_bg_black.png); }
+
+.widget-calendar caption {
+  font-size: 120%; }
+.widget-calendar table {
+  background: url(trans_bg_white.png);
+  border: none;
+  width: 100%;
+  margin: 0; }
+.widget-calendar th, .widget-calendar td {
+  margin: 0;
+  padding: 3px;
+  text-align: center; }
+.widget-calendar th {
+  line-height: 20px; }
+.widget-calendar table tfoot {
+  line-height: 20px; }
+  .widget-calendar table tfoot td {
+    text-align: left; }
+  .widget-calendar table tfoot a {
+    color: white; }
+
+.widget-categories .widget-content li a {
+  padding-left: 30px;
+  background: url(widgets.png) 0 -1390px no-repeat; }
+.widget-categories li a:hover {
+  background-position: 0 -1440px; }
+
+.widget-comments .widget-content li a {
+  padding-left: 30px;
+  background: url(widgets.png) 0 7px no-repeat; }
+.widget-comments li a:hover {
+  background-position: 0 -43px; }
+
+#contact-form-widget p {
+  margin: 0 0 10px 0; }
+#contact-form-widget input {
+  width: 90%; }
+  #contact-form-widget input[type=submit] {
+    width: auto; }
+
+.widget-gallery a {
+  display: inline-block;
+  margin: 0 5px 5px 5px;
+  background: url(trans_bg_white.png); }
+  .widget-gallery a:hover {
+    background: url(trans_bg_black.png); }
+
+.grid_3 .widget-gallery .widget-content {
+  padding-left: 10px; }
+
+.widget-newsletter form {
+  margin: 20px 0; }
+.widget-newsletter input {
+  width: 55%;
+  float: left; }
+  .widget-newsletter input[type=submit] {
+    float: right;
+    width: 30%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0; }
+
+.widget-recent-posts ul {
+  margin-top: -10px; }
+.widget-recent-posts li {
+  overflow: hidden;
+  padding: 10px 0 !important;
+  line-height: 150%; }
+.widget-recent-posts .img-holder {
+  float: left;
+  margin: 0 15px 0 0;
+  background: url(trans_bg_white.png) !important; }
+.widget-recent-posts li:hover .img-holder {
+  background: url(trans_bg_black.png) !important; }
+
+.post-link {
+  margin: 0 0 5px 0;
+  display: block; }
+
+.widget-posts-simple .widget-content li a {
+  padding-left: 30px;
+  background: url(widgets.png) 0 -194px no-repeat; }
+.widget-posts-simple li a:hover {
+  background-position: 0 -244px; }
+
+.widget-search label {
+  display: none; }
+.widget-search input {
+  width: 55%;
+  float: left; }
+  .widget-search input[type=submit] {
+    float: right;
+    width: 30%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0; }
+
+.widget-tags ul {
+  margin: 0;
+  padding: 0;
+  border: none; }
+.widget-tags li {
+  list-style: none;
+  margin: 0 10px 10px 0;
+  padding: 0;
+  border: none;
+  float: left;
+  clear: none;
+  line-height: 150%; }
+.widget-tags .widget-content li a {
+  display: block;
+  padding: 3px 5px;
+  background: url(trans_bg_black.png);
+  font-size: 85%;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px 0 #333333;
+  border-radius: 3px; }
+.widget-tags .widget-content a:hover {
+  background: url(trans_bg_white.png);
+  color: #333333;
+  text-shadow: 1px 1px 0 white; }
+
+.tags .widget-content li a {
+  padding-left: 30px;
+  background: url(widgets.png) 0 -1190px no-repeat !important; }
+.tags ul li a:hover {
+  background-position: 0 -1240px !important; }
+
+.widget-contacts-location .map-holder {
+  background: url(trans_bg_white.png);
+  padding: 5px; }
+  .widget-contacts-location .map-holder:hover {
+    background: url(trans_bg_black.png); }
+
+.widget-last-tweet .widget-heading {
+  background: none;
+  text-align: left;
+  border: none;
+  height: 30px;
+  margin-bottom: 20px; }
+.widget-last-tweet .widget-content {
+  background: url(widgets.png) 0 -785px no-repeat;
+  min-height: 50px;
+  border: none;
+  padding: 0; }
+  .widget-last-tweet .widget-content:hover {
+    background-position: 0 -885px !important; }
+  .widget-last-tweet .widget-content ul {
+    border: none; }
+  .widget-last-tweet .widget-content li {
+    border: none;
+    padding: 20px 0;
+    margin: 0 0 0 70px; }
+    .widget-last-tweet .widget-content li:hover {
+      background: none; }
+    .widget-last-tweet .widget-content li a {
+      padding: 0 !important; }
+  .widget-last-tweet .widget-content .tweet_text {
+    font-size: 140%; }
+    .widget-last-tweet .widget-content .tweet_text a {
+      display: inline; }
+
+.widget-tweets .widget-content li {
+  line-height: 170%;
+  background: url(widgets.png) 0 -385px no-repeat !important;
+  padding: 10px 0 10px 30px; }
+.widget-tweets li:hover {
+  background-position: 0 -485px !important; }
+.widget-tweets .widget-content li a {
+  padding: 0 !important;
+  display: inline !important; }
+.widget-tweets .tweet_time {
+  display: block; }
+
+.alt-widgets .widget-container {
+  margin: 0 0 40px 0; }
+.alt-widgets .widget-heading {
+  background: url(separator.png) bottom repeat-x transparent !important;
+  color: #eae3ce;
+  text-align: left;
+  border: none;
+  text-shadow: 0 -1px 0 black;
+  font-size: 20px; }
+.alt-widgets .widget-content {
+  color: white;
+  border: none;
+  text-shadow: 0 -1px 0 #333333; }
+.alt-widgets .widget-container .widget-content li a {
+  color: #eae3ce; }
+.alt-widgets .widget-content label {
+  color: #eae3ce; }
+.alt-widgets .widget-content ul {
+  border: none; }
+.alt-widgets .widget-content li {
+  border: none;
+  background: url(separator.png) bottom repeat-x transparent !important; }
+.alt-widgets .widget-hint {
+  background: url(trans_bg_black.png);
+  color: white; }
+  .alt-widgets .widget-hint a {
+    color: white !important; }
+.alt-widgets .widget-contacts-info span {
+  color: #eae3ce !important; }
+.alt-widgets .widget-banner {
+  background: url(trans_bg_black.png); }
+  .alt-widgets .widget-banner:hover {
+    background: url(trans_bg_white.png); }
+.alt-widgets .widget-archive li a, .alt-widgets .widget-blogroll li a {
+  background: url(widgets.png) 0 -1490px no-repeat; }
+  .alt-widgets .widget-archive li a:hover, .alt-widgets .widget-blogroll li a:hover {
+    background-position: 0 -1540px; }
+.alt-widgets .calendar-holder {
+  background: url(trans_bg_black.png); }
+  .alt-widgets .calendar-holder:hover {
+    background: url(trans_bg_white.png); }
+.alt-widgets .widget-calendar table {
+  background: url(trans_bg_black.png) !important; }
+.alt-widgets .widget-calendar th {
+  border-bottom: 1px solid black; }
+.alt-widgets .widget-calendar tbody tr.alt, .alt-widgets .widget-calendar tbody tr:nth-child(2n+1) {
+  background: #333333; }
+.alt-widgets .widget-categories li a {
+  background: url(widgets.png) 0 -1490px no-repeat; }
+  .alt-widgets .widget-categories li a:hover {
+    background-position: 0 -1540px; }
+.alt-widgets .widget-comments li a {
+  background: url(widgets.png) 0 -94px no-repeat; }
+  .alt-widgets .widget-comments li a:hover {
+    background-position: 0 -144px; }
+.alt-widgets .widget-gallery a {
+  background: url(trans_bg_black.png); }
+  .alt-widgets .widget-gallery a:hover {
+    background: url(trans_bg_white.png); }
+.alt-widgets .widget-recent-posts li .img-holder {
+  background: url(trans_bg_black.png) !important; }
+.alt-widgets .widget-recent-posts li:hover .img-holder {
+  background: url(trans_bg_white.png) !important; }
+.alt-widgets .widget-recent-posts .post-created {
+  color: #cccccc; }
+.alt-widgets .widget-posts-simple li a {
+  background: url(widgets.png) 0 -294px no-repeat; }
+  .alt-widgets .widget-posts-simple li a:hover {
+    background-position: 0 -344px; }
+.alt-widgets .widget-tags li {
+  border: none; }
+.alt-widgets .widget-tags a {
+  background: url(trans_bg_black.png); }
+  .alt-widgets .widget-tags a:hover {
+    background: url(trans_bg_white.png);
+    text-shadow: 0 -1px 0 #333333; }
+.alt-widgets .tags ul li a {
+  background: url(widgets.png) 0 -1290px no-repeat !important; }
+  .alt-widgets .tags ul li a:hover {
+    background-position: 0 -1340px !important; }
+.alt-widgets .widget-contacts-location .map-holder {
+  background: url(trans_bg_black.png); }
+  .alt-widgets .widget-contacts-location .map-holder:hover {
+    background: url(trans_bg_white.png); }
+.alt-widgets .widget-last-tweet li {
+  background: none !important; }
+.alt-widgets .widget-last-tweet .widget-content {
+  background: url(widgets.png) 0 -985px no-repeat; }
+  .alt-widgets .widget-last-tweet .widget-content:hover {
+    background-position: 0 -1085px !important; }
+.alt-widgets .widget-tweets li {
+  background: url(widgets.png) 0 -585px no-repeat !important; }
+  .alt-widgets .widget-tweets li:hover {
+    background-position: 0 -685px !important; }

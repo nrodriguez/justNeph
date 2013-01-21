@@ -1,113 +1,382 @@
-/*
-Syntax error: Illegal property syntax: can't use new syntax when :property_syntax => :old is set.
-        on line 8 of ./app/assets/stylesheets/skin.sass
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+.font-1 {
+  font-family: "Yanone Kaffeesatz", arial, serif !important; }
 
-3: @import url(http://fonts.googleapis.com/css?family=Lobster)
-4: 
-5: @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz)
-6: 
-7: .font-1
-8:   font-family: 'Yanone Kaffeesatz', arial, serif!Important
-9: 
-10: .font-2, #site-name, #site-slogan, #title-text, .widget-heading, .ppt
-11:   font-family: 'Lobster', arial, serif!Important
-12:   font-style: normal
-13: 
+.font-2, #site-name, #site-slogan, #title-text, .widget-heading, .ppt {
+  font-family: "Lobster", arial, serif !important;
+  font-style: normal; }
 
-Backtrace:
-./app/assets/stylesheets/skin.sass:8
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/prop_node.rb:107:in `check!'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:178:in `visit_prop'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:30:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:44:in `with_parent'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:29:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:192:in `visit_rule'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:30:in `block in visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:44:in `with_parent'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:29:in `visit_children'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:56:in `visit_root'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:21:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/cssize.rb:6:in `visit'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:22:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:263:in `block in render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/util.rb:373:in `silence_sass_warnings'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:263:in `render'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:81:in `update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:54:in `check_for_updates'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/rack.rb:51:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/etag.rb:23:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/conditionalget.rb:25:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/session/abstract/id.rb:210:in `context'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/session/abstract/id.rb:205:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__999226951__call__334252159__callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/methodoverride.rb:21:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/runtime.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/lock.rb:15:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/content_length.rb:14:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:81:in `block in pre_process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:79:in `catch'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:79:in `pre_process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:54:in `process'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:39:in `receive_data'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run_machine'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/eventmachine-1.0.0-x86-mingw32/lib/eventmachine.rb:187:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/backends/base.rb:63:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thin-1.5.0/lib/thin/server.rb:159:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/handler/thin.rb:13:in `run'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.4/lib/rack/server.rb:268:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands/server.rb:70:in `start'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:55:in `block in <top (required)>'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:50:in `tap'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/commands.rb:50:in `<top (required)>'
-script/rails:6:in `require'
-script/rails:6:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Illegal property syntax: can't use new syntax when :property_syntax => :old is set.\A         on line 8 of ./app/assets/stylesheets/skin.sass\A \A 3: @import url(http://fonts.googleapis.com/css?family=Lobster)\A 4: \A 5: @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz)\A 6: \A 7: .font-1\A 8:   font-family: 'Yanone Kaffeesatz', arial, serif!Important\A 9: \A 10: .font-2, #site-name, #site-slogan, #title-text, .widget-heading, .ppt\A 11:   font-family: 'Lobster', arial, serif!Important\A 12:   font-style: normal\A 13: "; }
+.page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
+  font-family: "Lobster", arial, serif !important;
+  font-style: normal; }
+
+.slider-wrapper h1, .slider-wrapper h2, .slider-wrapper h3, .slider-wrapper h4 {
+  font-family: "Lobster", arial, serif !important;
+  font-style: normal; }
+
+.font-3, #breadcrumbs, #page-footer, .box-head, table th, blockquote, label.error, .tabs-controller, .toggle-trigger, .accordion-trigger, .img-holder .caption, .pp_description, .nivo-caption, .postlist-header p, .post-content-header p, .post-content-tags, .post-author-url, .comment-created {
+  font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif !important;
+  font-style: italic;
+  font-size: 90%; }
+
+li.pager-first a, li.pager-last a {
+  font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif !important;
+  font-style: italic;
+  font-size: 90%; }
+
+.widget-calendar caption, .widget-recent-posts time, .tweet-time, .widget-last-tweet .widget-content, .btn, .btn-s, .btn-l, .btn-xl, input, legend, label {
+  font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif !important;
+  font-style: italic;
+  font-size: 90%; }
+
+input.submit, input[type=submit], input[type=reset], input[type=button] {
+  font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif !important;
+  font-style: italic;
+  font-size: 90%; }
+
+textarea {
+  font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif !important;
+  font-style: italic;
+  font-size: 90%; }
+
+#page-header {
+  background: url(backgrounds/1.png) #222222; }
+
+#bottom-widgets {
+  background: url(backgrounds/1.png) center top #222222;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/1.png) center top #222222; }
+
+#page-header .navigation-wrapper, #page-header .page-frontpage .navigation-wrapper {
+  background-color: #cc2c08; }
+
+#header-navigation li, #page-title, #breadcrumbs, .ribbon-header, .box-head, .page-content .header-404 h3.ribbon-404, .toggle-trigger, .accordion-trigger, #pager li:hover a, .pager-current span {
+  background-color: #cc2c08; }
+
+table th, table tfoot {
+  background-color: #cc2c08; }
+
+.circle-list li, .featured-list li, .arrow-list li, .check-list li, .ban-list li, .info-list li, .btn, .btn-s, .btn-l, .btn-xl {
+  background-color: #cc2c08; }
+
+input[type=submit], input[type=reset], input[type=button], input.submit, input[type=submit]:hover, input[type=reset]:hover, input.submit:hover {
+  background-color: #cc2c08; }
+
+button:hover {
+  background-color: #cc2c08; }
+
+.comment-header .comment-created, .widget-contacts-info span, .widget-recent-posts time, .tweet-time, .widget-content li:hover a, h1, h2, h3, h4, h5, h6 {
+  color: #ab391f; }
+
+a {
+  color: #ab391f; }
+  a:visited {
+    color: #ab391f; }
+  a:hover, a:active {
+    color: #652112; }
+
+#header-navigation a:hover {
+  color: #652112; }
+
+#page-header h1 a, #page-header h2 {
+  color: white; }
+
+.skin-1 #page-header {
+  background: url(backgrounds/skin-1.jpg) #313439; }
+.skin-1 #bottom-widgets {
+  background: url(backgrounds/skin-1.jpg) #313439;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-1.jpg) #313439; }
+.skin-1 #page-header .navigation-wrapper, .skin-1 #header-navigation li, .skin-1 #page-title, .skin-1 #breadcrumbs, .skin-1 .ribbon-header, .skin-1 .box-head, .skin-1 .page-content .header-404 h3.ribbon-404, .skin-1 .toggle-trigger, .skin-1 .accordion-trigger, .skin-1 #pager li:hover a, .skin-1 .pager-current span {
+  background-color: #984676; }
+.skin-1 table th, .skin-1 table tfoot {
+  background-color: #984676; }
+.skin-1 .circle-list li, .skin-1 .featured-list li, .skin-1 .arrow-list li, .skin-1 .check-list li, .skin-1 .ban-list li, .skin-1 .info-list li, .skin-1 .btn, .skin-1 .btn-s, .skin-1 .btn-l, .skin-1 .btn-xl {
+  background-color: #984676; }
+.skin-1 input[type=submit], .skin-1 input[type=reset], .skin-1 input[type=button], .skin-1 input.submit, .skin-1 input[type=submit]:hover, .skin-1 input[type=reset]:hover, .skin-1 input.submit:hover {
+  background-color: #984676; }
+.skin-1 button:hover {
+  background-color: #984676; }
+.skin-1 .comment-header .comment-created, .skin-1 .widget-contacts-info span, .skin-1 .widget-recent-posts time, .skin-1 .tweet-time, .skin-1 .widget-content li:hover a, .skin-1 h1, .skin-1 h2, .skin-1 h3, .skin-1 h4, .skin-1 h5, .skin-1 h6 {
+  color: #984676; }
+.skin-1 a {
+  color: #984676; }
+  .skin-1 a:visited {
+    color: #984676; }
+  .skin-1 a:hover, .skin-1 a:active {
+    color: #d9016c; }
+.skin-1 #header-navigation a:hover {
+  color: #d9016c; }
+
+.skin-2 #page-header {
+  background: url(backgrounds/skin-2.jpg) #333333; }
+.skin-2 #bottom-widgets {
+  background: url(backgrounds/skin-2.jpg) #333333;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-2.jpg) #333333; }
+.skin-2 #page-header .navigation-wrapper, .skin-2 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #f05230; }
+.skin-2 #header-navigation li, .skin-2 #page-title, .skin-2 #breadcrumbs, .skin-2 .ribbon-header, .skin-2 .box-head, .skin-2 .page-content .header-404 h3.ribbon-404, .skin-2 .toggle-trigger, .skin-2 .accordion-trigger, .skin-2 #pager li:hover a, .skin-2 .pager-current span {
+  background-color: #f05230; }
+.skin-2 table th, .skin-2 table tfoot {
+  background-color: #f05230; }
+.skin-2 .circle-list li, .skin-2 .featured-list li, .skin-2 .arrow-list li, .skin-2 .check-list li, .skin-2 .ban-list li, .skin-2 .info-list li, .skin-2 .btn, .skin-2 .btn-s, .skin-2 .btn-l, .skin-2 .btn-xl {
+  background-color: #f05230; }
+.skin-2 input[type=submit], .skin-2 input[type=reset], .skin-2 input[type=button], .skin-2 input.submit, .skin-2 input[type=submit]:hover, .skin-2 input[type=reset]:hover, .skin-2 input.submit:hover {
+  background-color: #f05230; }
+.skin-2 button:hover {
+  background-color: #f05230; }
+.skin-2 .comment-header .comment-created, .skin-2 .widget-contacts-info span, .skin-2 .widget-recent-posts time, .skin-2 .tweet-time, .skin-2 .widget-content li:hover a, .skin-2 h1, .skin-2 h2, .skin-2 h3, .skin-2 h4, .skin-2 h5, .skin-2 h6 {
+  color: #a6172c; }
+.skin-2 a {
+  color: #a6172c; }
+  .skin-2 a:visited {
+    color: #a6172c; }
+  .skin-2 a:hover, .skin-2 a:active {
+    color: #f05230; }
+.skin-2 #header-navigation a:hover {
+  color: #f05230; }
+
+.skin-3 #page-header {
+  background: url(backgrounds/skin-3.jpg) #353c34; }
+.skin-3 #bottom-widgets {
+  background: url(backgrounds/skin-3.jpg) #353c34;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-3.jpg) #353c34; }
+.skin-3 #page-header .navigation-wrapper, .skin-3 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #96c34b; }
+.skin-3 #header-navigation li, .skin-3 #page-title, .skin-3 #breadcrumbs, .skin-3 .ribbon-header, .skin-3 .box-head, .skin-3 .page-content .header-404 h3.ribbon-404, .skin-3 .toggle-trigger, .skin-3 .accordion-trigger, .skin-3 #pager li:hover a, .skin-3 .pager-current span {
+  background-color: #96c34b; }
+.skin-3 table th, .skin-3 table tfoot {
+  background-color: #96c34b; }
+.skin-3 .circle-list li, .skin-3 .featured-list li, .skin-3 .arrow-list li, .skin-3 .check-list li, .skin-3 .ban-list li, .skin-3 .info-list li, .skin-3 .btn, .skin-3 .btn-s, .skin-3 .btn-l, .skin-3 .btn-xl {
+  background-color: #96c34b; }
+.skin-3 input[type=submit], .skin-3 input[type=reset], .skin-3 input[type=button], .skin-3 input.submit, .skin-3 input[type=submit]:hover, .skin-3 input[type=reset]:hover, .skin-3 input.submit:hover {
+  background-color: #96c34b; }
+.skin-3 button:hover {
+  background-color: #96c34b; }
+.skin-3 .comment-header .comment-created, .skin-3 .widget-contacts-info span, .skin-3 .widget-recent-posts time, .skin-3 .tweet-time, .skin-3 .widget-content li:hover a, .skin-3 h1, .skin-3 h2, .skin-3 h3, .skin-3 h4, .skin-3 h5, .skin-3 h6 {
+  color: #659641; }
+.skin-3 a {
+  color: #659641; }
+  .skin-3 a:visited {
+    color: #659641; }
+  .skin-3 a:hover, .skin-3 a:active {
+    color: #3c4236; }
+.skin-3 #header-navigation a:hover {
+  color: #3c4236; }
+
+.skin-4 #page-header {
+  background: url(backgrounds/skin-4.jpg) #6f4924; }
+.skin-4 #bottom-widgets {
+  background: url(backgrounds/skin-4.jpg) #6f4924;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-4.jpg) #6f4924; }
+.skin-4 #page-header .navigation-wrapper, .skin-4 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #e9b82f; }
+.skin-4 #header-navigation li, .skin-4 #page-title, .skin-4 #breadcrumbs, .skin-4 .ribbon-header, .skin-4 .box-head, .skin-4 .page-content .header-404 h3.ribbon-404, .skin-4 .toggle-trigger, .skin-4 .accordion-trigger, .skin-4 #pager li:hover a, .skin-4 .pager-current span {
+  background-color: #e9b82f; }
+.skin-4 table th, .skin-4 table tfoot {
+  background-color: #e9b82f; }
+.skin-4 .circle-list li, .skin-4 .featured-list li, .skin-4 .arrow-list li, .skin-4 .check-list li, .skin-4 .ban-list li, .skin-4 .info-list li, .skin-4 .btn, .skin-4 .btn-s, .skin-4 .btn-l, .skin-4 .btn-xl {
+  background-color: #e9b82f; }
+.skin-4 input[type=submit], .skin-4 input[type=reset], .skin-4 input[type=button], .skin-4 input.submit, .skin-4 input[type=submit]:hover, .skin-4 input[type=reset]:hover, .skin-4 input.submit:hover {
+  background-color: #e9b82f; }
+.skin-4 button:hover {
+  background-color: #e9b82f; }
+.skin-4 .comment-header .comment-created, .skin-4 .widget-contacts-info span, .skin-4 .widget-recent-posts time, .skin-4 .tweet-time, .skin-4 .widget-content li:hover a, .skin-4 h1, .skin-4 h2, .skin-4 h3, .skin-4 h4, .skin-4 h5, .skin-4 h6 {
+  color: #b98324; }
+.skin-4 a {
+  color: #b98324; }
+  .skin-4 a:visited {
+    color: #b98324; }
+  .skin-4 a:hover, .skin-4 a:active {
+    color: #84501e; }
+.skin-4 #header-navigation a:hover {
+  color: #84501e; }
+
+.skin-5 #page-header {
+  background: url(backgrounds/skin-5.jpg) #353c34; }
+.skin-5 #bottom-widgets {
+  background: url(backgrounds/skin-5.jpg) #353c34;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-5.jpg) #353c34; }
+.skin-5 #page-header .navigation-wrapper, .skin-5 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #737d26; }
+.skin-5 #header-navigation li, .skin-5 #page-title, .skin-5 #breadcrumbs, .skin-5 .ribbon-header, .skin-5 .box-head, .skin-5 .page-content .header-404 h3.ribbon-404, .skin-5 .toggle-trigger, .skin-5 .accordion-trigger, .skin-5 #pager li:hover a, .skin-5 .pager-current span {
+  background-color: #737d26; }
+.skin-5 table th, .skin-5 table tfoot {
+  background-color: #737d26; }
+.skin-5 .circle-list li, .skin-5 .featured-list li, .skin-5 .arrow-list li, .skin-5 .check-list li, .skin-5 .ban-list li, .skin-5 .info-list li, .skin-5 .btn, .skin-5 .btn-s, .skin-5 .btn-l, .skin-5 .btn-xl {
+  background-color: #737d26; }
+.skin-5 input[type=submit], .skin-5 input[type=reset], .skin-5 input[type=button], .skin-5 input.submit, .skin-5 input[type=submit]:hover, .skin-5 input[type=reset]:hover, .skin-5 input.submit:hover {
+  background-color: #737d26; }
+.skin-5 button:hover {
+  background-color: #737d26; }
+.skin-5 .comment-header .comment-created, .skin-5 .widget-contacts-info span, .skin-5 .widget-recent-posts time, .skin-5 .tweet-time, .skin-5 .widget-content li:hover a, .skin-5 h1, .skin-5 h2, .skin-5 h3, .skin-5 h4, .skin-5 h5, .skin-5 h6 {
+  color: #737d26; }
+.skin-5 a {
+  color: #737d26; }
+  .skin-5 a:visited {
+    color: #737d26; }
+  .skin-5 a:hover, .skin-5 a:active {
+    color: #3f522b; }
+.skin-5 #header-navigation a:hover {
+  color: #3f522b; }
+
+.skin-6 #page-header {
+  background: url(backgrounds/skin-6.jpg) #193b56; }
+.skin-6 #bottom-widgets {
+  background: url(backgrounds/skin-6.jpg) #193b56;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-6.jpg) #193b56; }
+.skin-6 #page-header .navigation-wrapper, .skin-6 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #389bde; }
+.skin-6 #header-navigation li, .skin-6 #page-title, .skin-6 #breadcrumbs, .skin-6 .ribbon-header, .skin-6 .box-head, .skin-6 .page-content .header-404 h3.ribbon-404, .skin-6 .toggle-trigger, .skin-6 .accordion-trigger, .skin-6 #pager li:hover a, .skin-6 .pager-current span {
+  background-color: #389bde; }
+.skin-6 table th, .skin-6 table tfoot {
+  background-color: #389bde; }
+.skin-6 .circle-list li, .skin-6 .featured-list li, .skin-6 .arrow-list li, .skin-6 .check-list li, .skin-6 .ban-list li, .skin-6 .info-list li, .skin-6 .btn, .skin-6 .btn-s, .skin-6 .btn-l, .skin-6 .btn-xl {
+  background-color: #389bde; }
+.skin-6 input[type=submit], .skin-6 input[type=reset], .skin-6 input[type=button], .skin-6 input.submit, .skin-6 input[type=submit]:hover, .skin-6 input[type=reset]:hover, .skin-6 input.submit:hover {
+  background-color: #389bde; }
+.skin-6 button:hover {
+  background-color: #389bde; }
+.skin-6 .comment-header .comment-created, .skin-6 .widget-contacts-info span, .skin-6 .widget-recent-posts time, .skin-6 .tweet-time, .skin-6 .widget-content li:hover a, .skin-6 h1, .skin-6 h2, .skin-6 h3, .skin-6 h4, .skin-6 h5, .skin-6 h6 {
+  color: #286e9e; }
+.skin-6 a {
+  color: #286e9e; }
+  .skin-6 a:visited {
+    color: #286e9e; }
+  .skin-6 a:hover, .skin-6 a:active {
+    color: #389bde; }
+.skin-6 #header-navigation a:hover {
+  color: #389bde; }
+
+.skin-7 #page-header {
+  background: url(backgrounds/skin-7.jpg) #222222; }
+.skin-7 #bottom-widgets {
+  background: url(backgrounds/skin-7.jpg) #222222;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-7.jpg) #222222; }
+.skin-7 #page-header .navigation-wrapper, .skin-7 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #a7238c; }
+.skin-7 #header-navigation li, .skin-7 #page-title, .skin-7 #breadcrumbs, .skin-7 .ribbon-header, .skin-7 .box-head, .skin-7 .page-content .header-404 h3.ribbon-404, .skin-7 .toggle-trigger, .skin-7 .accordion-trigger, .skin-7 #pager li:hover a, .skin-7 .pager-current span {
+  background-color: #a7238c; }
+.skin-7 table th, .skin-7 table tfoot {
+  background-color: #a7238c; }
+.skin-7 .circle-list li, .skin-7 .featured-list li, .skin-7 .arrow-list li, .skin-7 .check-list li, .skin-7 .ban-list li, .skin-7 .info-list li, .skin-7 .btn, .skin-7 .btn-s, .skin-7 .btn-l, .skin-7 .btn-xl {
+  background-color: #a7238c; }
+.skin-7 input[type=submit], .skin-7 input[type=reset], .skin-7 input[type=button], .skin-7 input.submit, .skin-7 input[type=submit]:hover, .skin-7 input[type=reset]:hover, .skin-7 input.submit:hover {
+  background-color: #a7238c; }
+.skin-7 button:hover {
+  background-color: #a7238c; }
+.skin-7 .comment-header .comment-created, .skin-7 .widget-contacts-info span, .skin-7 .widget-recent-posts time, .skin-7 .tweet-time, .skin-7 .widget-content li:hover a, .skin-7 h1, .skin-7 h2, .skin-7 h3, .skin-7 h4, .skin-7 h5, .skin-7 h6 {
+  color: #a7238c; }
+.skin-7 a {
+  color: #a7238c; }
+  .skin-7 a:visited {
+    color: #a7238c; }
+  .skin-7 a:hover, .skin-7 a:active {
+    color: #a41ebe; }
+.skin-7 #header-navigation a:hover {
+  color: #a41ebe; }
+
+.skin-8 #page-header {
+  background: url(backgrounds/skin-8-2.png) center -100px no-repeat, url(backgrounds/skin-8.gif) #111111; }
+.skin-8 #bottom-widgets {
+  background: url(backgrounds/skin-8.gif) #111111;
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-8-2.png) center bottom no-repeat, url(backgrounds/skin-8.gif) #111111; }
+.skin-8 #page-header .navigation-wrapper, .skin-8 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #cccccc; }
+.skin-8 #header-navigation li, .skin-8 #page-title, .skin-8 #breadcrumbs, .skin-8 .ribbon-header, .skin-8 .box-head, .skin-8 .page-content .header-404 h3.ribbon-404, .skin-8 .toggle-trigger, .skin-8 .accordion-trigger, .skin-8 #pager li:hover a, .skin-8 .pager-current span {
+  background-color: #cccccc; }
+.skin-8 table th, .skin-8 table tfoot {
+  background-color: #cccccc; }
+.skin-8 .circle-list li, .skin-8 .featured-list li, .skin-8 .arrow-list li, .skin-8 .check-list li, .skin-8 .ban-list li, .skin-8 .info-list li, .skin-8 .btn, .skin-8 .btn-s, .skin-8 .btn-l, .skin-8 .btn-xl {
+  background-color: #cccccc; }
+.skin-8 input[type=submit], .skin-8 input[type=reset], .skin-8 input[type=button], .skin-8 input.submit, .skin-8 input[type=submit]:hover, .skin-8 input[type=reset]:hover, .skin-8 input.submit:hover {
+  background-color: #cccccc; }
+.skin-8 button:hover {
+  background-color: #cccccc; }
+.skin-8 #page-title h2, .skin-8 #page-title h3 {
+  color: black !important;
+  text-shadow: 0 1px 0 #cdcdcd !important; }
+.skin-8 .ribbon-header, .skin-8 .box-head, .skin-8 .page-content .header-404 h3.ribbon-404, .skin-8 .btn, .skin-8 .btn-s, .skin-8 .btn-l, .skin-8 .btn-xl {
+  color: black !important;
+  text-shadow: 0 1px 0 #cdcdcd !important; }
+.skin-8 input[type=submit], .skin-8 input[type=reset], .skin-8 input[type=button], .skin-8 input.submit, .skin-8 input[type=submit]:hover, .skin-8 input[type=reset]:hover, .skin-8 input.submit:hover {
+  color: black !important;
+  text-shadow: 0 1px 0 #cdcdcd !important; }
+.skin-8 button:hover {
+  color: black !important;
+  text-shadow: 0 1px 0 #cdcdcd !important; }
+.skin-8 .comment-header .comment-created, .skin-8 .widget-contacts-info span, .skin-8 .widget-recent-posts time, .skin-8 .tweet-time, .skin-8 .widget-content li:hover a, .skin-8 h1, .skin-8 h2, .skin-8 h3, .skin-8 h4, .skin-8 h5, .skin-8 h6 {
+  color: black; }
+.skin-8 a {
+  color: black; }
+  .skin-8 a:visited {
+    color: black; }
+  .skin-8 a:hover, .skin-8 a:active {
+    color: #646464; }
+.skin-8 #header-navigation a:hover {
+  color: #646464; }
+.skin-8 #title-search input[type=submit] {
+  color: white !important;
+  text-shadow: 0 1px 0 black !important; }
+
+.alt-widgets li:hover a, .alt-widgets a:hover {
+  color: white !important; }
+
+.skin-9 #page-header {
+  background: url(backgrounds/skin-9.jpg) #26435b; }
+.skin-9 #bottom-widgets {
+  background: url(backgrounds/skin-9.jpg);
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-9.jpg) #26435b; }
+.skin-9 #page-header .navigation-wrapper, .skin-9 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #2f9dd8; }
+.skin-9 #header-navigation li, .skin-9 #page-title, .skin-9 #breadcrumbs, .skin-9 .ribbon-header, .skin-9 .box-head, .skin-9 .page-content .header-404 h3.ribbon-404, .skin-9 .toggle-trigger, .skin-9 .accordion-trigger, .skin-9 #pager li:hover a, .skin-9 .pager-current span {
+  background-color: #2f9dd8; }
+.skin-9 table th, .skin-9 table tfoot {
+  background-color: #2f9dd8; }
+.skin-9 .circle-list li, .skin-9 .featured-list li, .skin-9 .arrow-list li, .skin-9 .check-list li, .skin-9 .ban-list li, .skin-9 .info-list li, .skin-9 .btn, .skin-9 .btn-s, .skin-9 .btn-l, .skin-9 .btn-xl {
+  background-color: #2f9dd8; }
+.skin-9 input[type=submit], .skin-9 input[type=reset], .skin-9 input[type=button], .skin-9 input.submit, .skin-9 input[type=submit]:hover, .skin-9 input[type=reset]:hover, .skin-9 input.submit:hover {
+  background-color: #2f9dd8; }
+.skin-9 button:hover {
+  background-color: #2f9dd8; }
+.skin-9 .comment-header .comment-created, .skin-9 .widget-contacts-info span, .skin-9 .widget-recent-posts time, .skin-9 .tweet-time, .skin-9 .widget-content li:hover a, .skin-9 h1, .skin-9 h2, .skin-9 h3, .skin-9 h4, .skin-9 h5, .skin-9 h6 {
+  color: #3081ad; }
+.skin-9 a {
+  color: #3081ad; }
+  .skin-9 a:visited {
+    color: #3081ad; }
+  .skin-9 a:hover, .skin-9 a:active {
+    color: #17658e; }
+.skin-9 #header-navigation a:hover {
+  color: #17658e; }
+
+#page-header h1 a, #page-header h2 {
+  color: white;
+  text-shadow: 0 -1px 0 #17658e; }
+
+.skin-10 #page-header {
+  background: url(backgrounds/skin-10.jpg) #1b1b1b; }
+.skin-10 #bottom-widgets {
+  background: url(backgrounds/skin-10.jpg);
+  background: url(bottom_widgets.png) top repeat-x, url(bottom_widgets.png) bottom repeat-x, url(backgrounds/skin-10.jpg) #222222; }
+.skin-10 #page-header .navigation-wrapper, .skin-10 #page-header .page-frontpage .navigation-wrapper {
+  background-color: #9b6533; }
+.skin-10 #header-navigation li, .skin-10 #page-title, .skin-10 #breadcrumbs, .skin-10 .ribbon-header, .skin-10 .box-head, .skin-10 .page-content .header-404 h3.ribbon-404, .skin-10 .toggle-trigger, .skin-10 .accordion-trigger, .skin-10 #pager li:hover a, .skin-10 .pager-current span {
+  background-color: #9b6533; }
+.skin-10 table th, .skin-10 table tfoot {
+  background-color: #9b6533; }
+.skin-10 .circle-list li, .skin-10 .featured-list li, .skin-10 .arrow-list li, .skin-10 .check-list li, .skin-10 .ban-list li, .skin-10 .info-list li, .skin-10 .btn, .skin-10 .btn-s, .skin-10 .btn-l, .skin-10 .btn-xl {
+  background-color: #9b6533; }
+.skin-10 input[type=submit], .skin-10 input[type=reset], .skin-10 input[type=button], .skin-10 input.submit, .skin-10 input[type=submit]:hover, .skin-10 input[type=reset]:hover, .skin-10 input.submit:hover {
+  background-color: #9b6533; }
+.skin-10 button:hover {
+  background-color: #9b6533; }
+.skin-10 .comment-header .comment-created, .skin-10 .widget-contacts-info span, .skin-10 .widget-recent-posts time, .skin-10 .tweet-time, .skin-10 .widget-content li:hover a, .skin-10 h1, .skin-10 h2, .skin-10 h3, .skin-10 h4, .skin-10 h5, .skin-10 h6 {
+  color: #9e6a3e; }
+.skin-10 a {
+  color: #9e6a3e; }
+  .skin-10 a:visited {
+    color: #9e6a3e; }
+  .skin-10 a:hover, .skin-10 a:active {
+    color: #5e2d19; }
+.skin-10 #header-navigation a:hover {
+  color: #5e2d19; }

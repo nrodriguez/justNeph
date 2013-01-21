@@ -39,10 +39,12 @@ GEM
     coffee-script-source (1.4.0)
     daemons (1.1.9)
     erubis (2.7.0)
+    eventmachine (1.0.0)
     eventmachine (1.0.0-x86-mingw32)
     execjs (1.4.0)
       multi_json (~> 1.0)
     haml (3.1.7)
+    heroku_external_db (1.0.3)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -56,6 +58,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    mysql2 (0.3.11)
     mysql2 (0.3.11-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.4)
@@ -113,6 +116,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml
+  heroku_external_db
   jquery-rails
   mysql2
   rails (= 3.2.11)
