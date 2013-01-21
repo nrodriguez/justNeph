@@ -12,6 +12,13 @@ gem 'sass-rails',   '~> 3.2.3'
 
 #Heroku
 gem 'heroku_external_db'
+
+group :tests do
+  gem 'travis'
+  gem 'cucumber'
+  gem 'rspec'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
