@@ -56,9 +56,11 @@ JustNeph::Application.configure do
     plugins/video-js/video.js 
     plugins/tweet/jquery.tweet.js
     plugins/jquery-validate/jquery.validate.min.js 
-    scripts.js 
+    scripts.js
+    plugins/PIE/PIE.js
   )
 
+ # config.assets.precompile = Dir["#{Rails.root}/javascripts/*.js"].collect{|f| File.basename(f).gsub(/\.rb/,'').to_sym }
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
