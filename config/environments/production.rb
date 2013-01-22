@@ -1,3 +1,15 @@
+def compile_asset?(path)
+  # ignores any filename that begins with '_' (e.g. sass partials)
+  # all other css/js/sass/image files are processed
+  if File.basename(path) =~ /^[^_].*\.\w+$/
+    puts "Compiling: #{path}"
+    true
+  else
+    puts "Ignoring: #{path}"
+    false
+  end
+end
+ 
 JustNeph::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -46,19 +58,20 @@ JustNeph::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += %w( modernizr.min.js 
-    ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
-    jquery-ui.min.js 
-    jquery.easing.1.3.js 
-    plugins/nivo/jquery.nivo.slider.pack.js
-    plugins/prettyphoto/jquery.prettyPhoto.js
-    plugins/tipsy/jquery.tipsy.js 
-    plugins/video-js/video.js 
-    plugins/tweet/jquery.tweet.js
-    plugins/jquery-validate/jquery.validate.min.js 
-    scripts.js
-    plugins/PIE/PIE.js
-  )
+  # config.assets.precompile += %w( modernizr.min.js 
+  #   ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+  #   jquery-ui.min.js 
+  #   jquery.easing.1.3.js 
+  #   plugins/nivo/jquery.nivo.slider.pack.js
+  #   plugins/prettyphoto/jquery.prettyPhoto.js
+  #   plugins/tipsy/jquery.tipsy.js 
+  #   plugins/video-js/video.js 
+  #   plugins/tweet/jquery.tweet.js
+  #   plugins/jquery-validate/jquery.validate.min.js 
+  #   scripts.js
+  #   plugins/PIE/PIE.js
+  # )
+  config.assets.precompile = [ method(:compile_asset?).to_proc ]
 
  # config.assets.precompile = Dir["#{Rails.root}/javascripts/*.js"].collect{|f| File.basename(f).gsub(/\.rb/,'').to_sym }
   # Disable delivery errors, bad email addresses will be ignored
