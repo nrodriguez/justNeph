@@ -3,13 +3,13 @@ jQuery.noConflict();
 jQuery(document).ready(function($) {
     /* Tweet widgets -------------------------------------------------------- */
     $(".widget-tweets .widget-content").tweet({
-        username: "envato",
+        username: "justNeph",
         count: 3
     });
 
     if($(".widget-last-tweet").length){
         $(".widget-last-tweet .widget-content").tweet({
-            username: "envato",
+            username: "justNeph",
             count: 1
         });
     }

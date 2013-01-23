@@ -4,26 +4,12 @@
     / Row
     .grid_4
       %nav.widget-container.widget-gallery
-        %h2.widget-heading Gallery widget
+        %h2.widget-heading Instagram
         .widget-content
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
-          %a.img-holder.round-3.gallery-last{:href => "assets/590x290.gif", :rel => "prettyPhoto[gallery-1]", :title => "Image gallery"}
-            %img{:alt => "Gallery item", :height => "70", :src => "assets/70x70.gif", :width => "70"}/
+          - photos = instagram_photos(9)
+          - photos.each do |photo|
+            %a.img-holder.round-3{:class => photo[:last_in_set] ? "gallery-last" : "", :href => photo[:url], :rel => "prettyPhoto[gallery-1]", :title => photo[:caption]}
+              %img{:alt => "Instagram Picture", :height => "70", :src => photo[:thumbnail], :width => "70"}/
     / /Row
     / Row
     .grid_4

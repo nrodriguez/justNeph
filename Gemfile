@@ -9,6 +9,8 @@ gem 'mysql2'
 gem 'haml'
 gem 'thin'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'instagram'
+gem 'figaro'
 
 #Heroku
 gem 'heroku_external_db'
@@ -46,4 +48,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
