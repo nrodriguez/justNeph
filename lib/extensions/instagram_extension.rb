@@ -33,12 +33,10 @@ module Extensions
         :path => "/oauth/access_token",
       }).to_s, {
         :client_id => Figaro.env.instagram_client_id,
-        :client_secret => Figaro.env.instagram_secret,
         :redirect_uri => "http://justNeph.com",
-        :grant_type => "authorization_code",
-        :code => code
+        :response_type => "token"
       })
-      
+
       JSON.parse(response)["access_token"]
     end
   end

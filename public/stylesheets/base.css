@@ -1954,7 +1954,6 @@ a.with-subnav {
 .page-frontpage section {
   margin-bottom: 0; }
 .page-frontpage .navigation-wrapper {
-  height: 500px;
   background: url(navigation_wrapper.png) bottom repeat-x;
   background: url(slider-bg.png) top repeat-x, url(navigation_wrapper.png) bottom repeat-x, url(navigation_wrapper.png) top repeat-x; }
 
