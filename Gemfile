@@ -11,7 +11,8 @@ gem 'thin'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'instagram'
 gem 'figaro'
-
+gem 'rest-client'
+gem 'oauth2'
 #Heroku
 gem 'heroku_external_db'
 

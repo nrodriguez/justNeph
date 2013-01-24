@@ -81,6 +81,7 @@ GEM
     heroku_external_db (1.0.3)
     highline (1.6.15)
     hike (1.2.1)
+    httpauth (0.2.0)
     i18n (0.6.1)
     instagram (0.8.5)
       faraday (>= 0.7, < 0.9)
@@ -92,6 +93,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.6)
+    jwt (0.1.5)
+      multi_json (>= 1.0)
     launchy (2.1.2)
       addressable (~> 2.3)
     mail (2.4.4)
@@ -106,6 +109,12 @@ GEM
     net-http-persistent (2.8)
     net-http-pipeline (1.0.1)
     netrc (0.7.7)
+    oauth2 (0.8.0)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
     polyglot (0.3.3)
     rack (1.4.4)
     rack-cache (1.2)
@@ -132,6 +141,8 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.0.1)
       rspec-core (~> 2.0.1)
       rspec-expectations (~> 2.0.1)
@@ -187,7 +198,9 @@ DEPENDENCIES
   instagram
   jquery-rails
   mysql2
+  oauth2
   rails (= 3.2.11)
+  rest-client
   rspec
   sass-rails (~> 3.2.3)
   thin
