@@ -1,0 +1,8 @@
+- content_for :blog do
+  = render "blog/title"
+  / Page body
+  #page-body.container_12.clearfix
+    = render "blog/content"
+    = render "blog/sidebar"
+  / /Page body
+= render :template => "layouts/application"

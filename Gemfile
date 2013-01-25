@@ -13,6 +13,7 @@ gem 'instagram'
 gem 'figaro'
 gem 'rest-client'
 gem 'oauth2'
+gem 'oauth'
 #Heroku
 gem 'heroku_external_db'
 

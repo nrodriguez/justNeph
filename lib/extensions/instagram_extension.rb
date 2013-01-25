@@ -2,8 +2,6 @@ require 'addressable/uri'
 require 'json'
 require 'oauth2'
 require 'rest-client'
-require 'ruby-debug'
-Debugger.start
 module Extensions
   module InstagramExtension
     def authorize_url

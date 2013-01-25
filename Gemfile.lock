@@ -109,6 +109,7 @@ GEM
     net-http-persistent (2.8)
     net-http-pipeline (1.0.1)
     netrc (0.7.7)
+    oauth (0.4.7)
     oauth2 (0.8.0)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -198,6 +199,7 @@ DEPENDENCIES
   instagram
   jquery-rails
   mysql2
+  oauth
   oauth2
   rails (= 3.2.11)
   rest-client
