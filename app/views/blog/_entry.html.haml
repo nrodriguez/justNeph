@@ -1,0 +1,18 @@
+/ Page content
+#post-1.page-content.grid_8
+  - @posts.each do |post|
+    %article.post-content.clearfix
+      / Post title + info
+      %header.post-content-header
+        %h2 
+          = strip_tags(post[:title])
+        %p
+          Posted on
+          %time{:datetime => "2011-01-29T23:31:45+01:00"} 
+            = post[:date]
+      / /Post title + info
+      / Post content
+      %section
+        = render :partial => "blog/content", :locals => {:post => post}
+    / /Post content
+/ /Page content
