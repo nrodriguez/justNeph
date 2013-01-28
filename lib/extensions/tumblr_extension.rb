@@ -62,6 +62,15 @@ module Extensions
     private
 
     def parse_posts(post_attr, post)
+      #This is because for some reason tumblr takes certain characters
+      #and sends them back as ascii codes -_-
+      post.each {|k, v|
+        if v.kind_of? String
+          v.gsub!("&#8217\;", "'")  if v.include?("&#8217\;")
+          v.gsub!("&#8230\;", "...")  if v.include?("&#8230\;")
+        end
+      }
+
       case post["type"]
       when "text"
         post_attr[:title] = post["title"]
