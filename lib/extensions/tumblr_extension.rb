@@ -70,7 +70,7 @@ module Extensions
         post_attr[:title] = post["caption"]
         post_attr[:content] = post["photos"].collect{|x| x["original_size"]["url"]}
       when "quote"
-        post_attr[:title] = post["source_title"]
+        post_attr[:title] = "Quote"
         post_attr[:content] = {
           :source_url => post["source_url"],
           :text => post["text"],
@@ -87,13 +87,16 @@ module Extensions
         post_attr[:content] = post["dialogue"]
       when "audio"
         post_attr[:title] = post["caption"]
-        post_attr[:content] = post["player"]
-      when "video"
-        post_attr[:title] = post["source_title"]
         post_attr[:content] = {
-          :caption => post["caption"],
-          :video => post["player"]
+          :player => post["player"],
+          :album_art => post["album_art"],
+          :album => post["album"],
+          :track_name => post["track_name"],
+          :artist => post["artist"]
         }
+      when "video"
+        post_attr[:title] = post["caption"]
+        post_attr[:content] = post["player"].last["embed_code"]
       when "answer"
         post_attr[:title] = post["question"]
         post_attr[:content] = {

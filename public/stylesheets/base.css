@@ -1114,8 +1114,7 @@ button:hover {
   position: relative;
   margin: 0 0 20px;
   padding: 20px;
-  overflow: hidden;
-  display: inline-block; }
+  overflow: hidden; }
 
 .box-1 {
   border-top: 1px solid white;
@@ -1145,6 +1144,12 @@ button:hover {
   margin: 0;
   padding: 0;
   text-shadow: 1px 1px 0 #333333; }
+  .box-head a:link {
+    color: white !important; }
+  .box-head a:visited {
+    color: white !important; }
+  .box-head a:hover, .box-head a:active {
+    color: white !important; }
 
 .box-2 .box-head {
   background-position: 0 -210px; }

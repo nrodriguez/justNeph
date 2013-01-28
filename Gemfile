@@ -6,16 +6,18 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'haml'
 gem 'thin'
-gem 'sass-rails',   '~> 3.2.3'
 gem 'instagram'
 gem 'figaro'
 gem 'rest-client'
+
+#Front End
+gem 'sass-rails',   '~> 3.2.3'
+gem 'haml'
+
+#Authentication
 gem 'oauth2'
 gem 'oauth'
-#Heroku
-gem 'heroku_external_db'
 
 group :tests do
   gem 'travis'
@@ -26,7 +28,6 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes

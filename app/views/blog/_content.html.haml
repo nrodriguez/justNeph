@@ -1,5 +1,42 @@
--if post[:type] == "photo"
-  - post[:content].each do |picture|
-    %p.align-center
-      %a.img-holder.round-3{:href => picture, :rel => "prettyPhoto", :title => post[:title]}
-        %img{:alt => "Tumblr", :height => "70", :src => picture, :width => "70"}/
+-case post[:type]
+  -when "photo"
+    - post[:content].each do |picture|
+      %p.align-center
+        %a.img-holder.round-3{:href => picture, :rel => "prettyPhoto", :title => post[:title]}
+          %img{:alt => "Tumblr", :height => "300", :src => picture, :width => "300"}/
+  -when "text"
+    = post[:content].html_safe
+  -when "quote"
+    %blockquote
+      = post[:content][:text]
+      %cite
+        = "- #{post[:content][:source]}"
+        %p
+          = link_to(post[:content][:source_url])
+  -when "link"
+    .content-box.header-box.box-1.round-3
+      .box-head
+        = link_to(post[:content][:url])
+      = post[:content][:text].html_safe
+  -when "chat"
+    - post[:content].each do |line|
+      %p
+        %span.font-3.large
+          = line["label"]
+        %span
+          = line["phrase"]
+  -when "audio"
+    .song
+      %a.img-holder.align-left{:rel => "prettyPhoto", :href => post[:content][:album_art]}
+        %img{:alt => post[:content][:artist], :src => post[:content][:album_art], :height => 90, :width => 90}/
+      .align-left
+        %p.x-large.font-1
+          = "Title: \"#{post[:content][:track_name]}\""
+        %p.x-large.font-1
+          = "Artist: \"#{post[:content][:artist]}\""
+        %p.x-large.font-1
+          = "Album: \"#{post[:content][:album]}\""
+        %p
+          = post[:content][:player].html_safe
+  -when "video"
+    = post[:content].html_safe
