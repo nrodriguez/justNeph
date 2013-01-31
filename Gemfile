@@ -22,7 +22,7 @@ gem 'oauth'
 group :tests do
   gem 'travis'
   gem 'cucumber'
-  gem 'rspec'
+  gem 'rspec', :git => "git://github.com/rspec/rspec.git"
 end
 
 # Gems used only for assets and not required

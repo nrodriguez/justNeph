@@ -159,8 +159,11 @@ jQuery(document).ready(function($) {
     
     /* Static header */
     if($('.slider-wrapper').length) {
-        var getHeight = $('.slider-wrapper').height() + 140;
-        $('.navigation-wrapper').height(getHeight);
+        //Commenting this out because we are using it
+        //for the shop which doesn't extend the header
+        //anymore.
+    //    var getHeight = $('.slider-wrapper').height() + 140;
+     //   $('.navigation-wrapper').height(getHeight);
     }
     
     if($('.slider-static').length) {

@@ -1,0 +1,49 @@
+%h1 Merch Logo Goes Here
+
+= render "application/slider"
+
+/ Page content
+.page-content
+  -# @products.each do |item|
+    =# render :partial => "store/item", :locals => {:item => item}
+  
+  / Gallery list item
+  %section.gallery-item.grid_3
+    / Gallery item picture
+    %a.gallery-image.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gal]", :title => "View fullsize"}
+      %span.gallery-image-inner
+        %img{:alt => "Item one", :height => "130", :src => "assets/210x130.gif", :width => "120"}/
+    / /Gallery item picture
+  / /Gallery list item
+  / Gallery list item
+  %section.gallery-item.grid_3
+    / Gallery item picture
+    %a.gallery-image.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gal]", :title => "View fullsize"}
+      %span.gallery-image-inner
+        %img{:alt => "Item one", :height => "130", :src => "assets/210x130.gif", :width => "120"}/
+    / /Gallery item picture
+  / /Gallery list item
+  / Gallery list item
+  %section.gallery-item.grid_3
+    / Gallery item picture
+    %a.gallery-image.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gal]", :title => "View fullsize"}
+      %span.gallery-image-inner
+        %img{:alt => "Item one", :height => "130", :src => "assets/210x130.gif", :width => "120"}/
+    / /Gallery item picture
+  / /Gallery list item
+
+  #pager
+    %ul
+      %li.pager-first
+        %a{:href => "#", :title => "First page"} « First
+      %li
+        %a{:href => "#", :title => "Second page"} 1
+      %li
+        %a{:href => "#", :title => "Third page"} 2
+      %li.pager-current
+        %span{:title => "Current page"} 3
+      %li
+        %a{:href => "#", :title => "Fifth page"} 4
+      %li.pager-last
+        %a{:href => "#", :title => "Last page"} Last »
+/ /Page content

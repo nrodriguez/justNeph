@@ -32,7 +32,12 @@
 
     = render "application/header"
 
-    = content_for?(:blog) ? yield(:blog) : yield
+    - if content_for?(:blog)
+      = yield(:blog)
+    - elsif content_for?(:store)
+      = yield(:store)
+    - else
+      = yield
 
     = render "application/bottom_widgets"
 
