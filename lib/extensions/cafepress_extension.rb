@@ -18,7 +18,9 @@ module Extensions
         price: item["sellPrice"],
         active: true,
         merchant_id: Merchant.find_by_name("CafePress").id,
-        unique_id: item["id"]
+        unique_id: item["id"],
+        url: item['marketplaceUri'],
+        image: item['productImage'].first['productUrl']
       }
       Product.create(attr)
     end

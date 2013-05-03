@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130430034308) do
+ActiveRecord::Schema.define(:version => 20130503170108) do
 
   create_table "merchants", :force => true do |t|
     t.integer  "store_id"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20130430034308) do
     t.string   "unique_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "url"
+    t.string   "image"
   end
 
   create_table "stores", :force => true do |t|

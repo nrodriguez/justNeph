@@ -1,6 +1,7 @@
 class Product < ActiveRecord::Base
   attr_accessible :name, :description, :category,
-    :price, :active, :unique_id, :merchant_id
+    :price, :active, :unique_id, :merchant_id,
+    :url, :image
 
   belongs_to :merchant
 

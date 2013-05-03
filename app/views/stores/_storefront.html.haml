@@ -47,3 +47,8 @@
       %li.pager-last
         %a{:href => "#", :title => "Last page"} Last »
 / /Page content
+
+%p
+  - @products.each do |product|
+    = product.name
+    = link_to image_tag("#{product.image}", height: 150, width: 150), product.url
