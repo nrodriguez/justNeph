@@ -1,5 +1,10 @@
 class Product < ActiveRecord::Base
-  belongs_to :store
+  attr_accessible :name, :description, :category,
+    :price, :active, :unique_id, :merchant_id
+
+  belongs_to :merchant
+
+  validates_uniqueness_of :unique_id
 
   include Extensions::ProductExtension
 end

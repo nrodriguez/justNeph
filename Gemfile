@@ -10,6 +10,8 @@ gem 'thin'
 gem 'instagram'
 gem 'figaro'
 gem 'rest-client'
+gem 'addressable'
+gem 'jquery-rails'
 
 #Front End
 gem 'sass-rails',   '~> 3.2.3'
@@ -19,10 +21,30 @@ gem 'haml'
 gem 'oauth2'
 gem 'oauth'
 
-group :tests do
-  gem 'travis'
-  gem 'cucumber'
-  gem 'rspec', :git => "git://github.com/rspec/rspec.git"
+#Merchant API's
+gem "cafepress_api", :github => "nrodriguez/cafepress_api"
+
+# Extension for rescue: this adds jobs
+gem 'redis'
+gem 'redis-namespace', :require => false
+gem 'resque', :require => 'resque/server'
+gem "resque-scheduler", '~>1.0', :require => 'resque_scheduler' #required redis version >= 1.3
+gem 'resque-cleaner'
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'timecop'
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'vcr'
+  gem 'fakeweb'
+  gem 'better_errors'
+  gem 'pry'
+  gem 'pry-debugger'
+  gem 'pry-rails'
 end
 
 # Gems used only for assets and not required
@@ -35,8 +57,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

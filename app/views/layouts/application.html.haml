@@ -34,8 +34,8 @@
 
     - if content_for?(:blog)
       = yield(:blog)
-    - elsif content_for?(:store)
-      = yield(:store)
+    - elsif content_for?(:stores)
+      = yield(:stores)
     - else
       = yield
 

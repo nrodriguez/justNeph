@@ -1,3 +1,4 @@
 class Store < ActiveRecord::Base
-  has_many :products
+  attr_accessible :name
+  has_many :merchants
 end

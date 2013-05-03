@@ -6,7 +6,8 @@ class CreateProducts < ActiveRecord::Migration
       t.string :category
       t.float :price
       t.boolean :active
-      t.string :site
+      t.integer :merchant_id
+      t.string :unique_id
       t.timestamps
     end
   end

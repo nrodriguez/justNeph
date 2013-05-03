@@ -62,5 +62,13 @@ module JustNeph
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework :rspec, fixture_replacement: :factory_girl, views: false, helper: false
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      g.view_specs false
+      g.helper_specs false
+    end
   end
 end
