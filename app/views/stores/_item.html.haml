@@ -1,8 +1,13 @@
-/ Gallery list item
-%section.gallery-item.grid_3
-  / Gallery item picture
-  %a.gallery-image.round-3{:href => "assets/590x290.gif", :rel => "prettyPhoto[gal]", :title => "View fullsize"}
-    %span.gallery-image-inner
-      %img{:alt => "Item one", :height => "130", :src => "assets/210x130.gif", :width => "120"}/
-  / /Gallery item picture
-/ /Gallery list item
+= item.name
+= link_to image_tag("#{item.image}", height: 150, width: 150), "#myModal", {"data-toggle" => "modal"}
+
+%a.btn.btn-mini.hide{"data-toggle" => "modal", :href => "#myModal", :role => "button"} Change role
+
+.modal#myModal{:style => "display: none;"}
+  .modal-header
+    %a.close{"data-dismiss" => "modal"} ×
+    %h3 Change Role
+  .modal-body
+    123
+  .modal-footer
+    Close
