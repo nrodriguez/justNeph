@@ -1,12 +1,16 @@
-= item.name
-= link_to image_tag("#{item.image}", height: 150, width: 150), "#myModal", {"data-toggle" => "modal"}
+.item_container
+  .item_name
+    = item.fixed_name
+  .item_picture
+    = link_to image_tag("#{item.image}", height: 150, width: 150), "#modal-#{item.unique_id}", {"data-toggle" => "modal"}
+  .purchase_button
+    %a.btn.btn-mini{"data-toggle" => "modal", :href => "#modal-#{item.unique_id}", :role => "button"} Change role
 
-%a.btn.btn-mini.hide{"data-toggle" => "modal", :href => "#myModal", :role => "button"} Change role
-
-.modal#myModal{:style => "display: none;"}
+.modal.hide{:id => "modal-#{item.unique_id}"}
   .modal-header
     %a.close{"data-dismiss" => "modal"} ×
-    %h3 Change Role
+    %h3
+      = item.name
   .modal-body
     123
   .modal-footer

@@ -39,6 +39,8 @@ GEM
     better_errors (0.8.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    bootstrap-sass (2.3.1.0)
+      sass (~> 3.2)
     builder (3.0.4)
     coderay (1.0.9)
     coffee-rails (3.2.2)
@@ -76,6 +78,9 @@ GEM
     figaro (0.6.3)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    font-awesome-sass-rails (3.0.2.2)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     haml (4.0.2)
       tilt
     hashie (2.0.4)
@@ -227,6 +232,7 @@ PLATFORMS
 DEPENDENCIES
   addressable
   better_errors
+  bootstrap-sass
   cafepress_api!
   coffee-rails (~> 3.2.1)
   database_cleaner
@@ -234,6 +240,7 @@ DEPENDENCIES
   factory_girl_rails
   fakeweb
   figaro
+  font-awesome-sass-rails
   haml
   instagram
   jquery-rails

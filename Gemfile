@@ -16,6 +16,9 @@ gem 'jquery-rails'
 #Front End
 gem 'sass-rails',   '~> 3.2.3'
 gem 'haml'
+# Twitter Bootstrap
+gem 'bootstrap-sass'
+gem 'font-awesome-sass-rails'
 
 #Authentication
 gem 'oauth2'

@@ -8,4 +8,8 @@ class Product < ActiveRecord::Base
   validates_uniqueness_of :unique_id
 
   include Extensions::ProductExtension
+
+  def fixed_name
+    name.gsub!("justNeph", "")
+  end
 end
