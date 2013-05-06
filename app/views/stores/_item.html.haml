@@ -4,14 +4,27 @@
   .item_picture
     = link_to image_tag("#{item.image}", height: 150, width: 150), "#modal-#{item.unique_id}", {"data-toggle" => "modal"}
   .purchase_button
-    %a.btn.btn-mini{"data-toggle" => "modal", :href => "#modal-#{item.unique_id}", :role => "button"} Change role
+    %a.btn.btn-success{"data-toggle" => "modal", :href => "#modal-#{item.unique_id}", :role => "button"} Buy
 
-.modal.hide{:id => "modal-#{item.unique_id}"}
+.item_modal.modal.hide{:id => "modal-#{item.unique_id}"}
   .modal-header
     %a.close{"data-dismiss" => "modal"} ×
     %h3
-      = item.name
+      hey
+      = item.fixed_name
   .modal-body
-    123
+    .item_content
+      .picture.normal
+        = image_tag("#{item.image}")
+      .item_information
+        .description
+          = item.description
+
+          .category
+            = item.category
+        .price
+          = number_to_currency(item.price)
   .modal-footer
-    Close
+    %a.btn.btn-inverse{"data-dismiss" => "modal"} Close
+    %a.btn.btn-success{:href => item.url, :target => "_blank"}
+      Purchase

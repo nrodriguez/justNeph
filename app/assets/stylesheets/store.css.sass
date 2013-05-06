@@ -6,11 +6,24 @@
   height: 250px
   width: 250px
 
+.pager
+  clear:both
+
+.item_container, .item_modal
+  a,
+  a:link,
+  a:active,
+  a:visited,
+  a:hover
+    color: white
+
 .item_container
-  height: 150px
   width: 150px
   margin: 10px
   float: left
+
+  .item_modal
+    clear: both
 
   .item_name
     font-size: 13px
@@ -19,3 +32,25 @@
 
   .purchase_button
     text-align: center
+    padding: 10px
+
+.item_modal
+  .item_content
+    .picture
+      float: left
+    .item_information
+      float: left
+      width: 280px
+      .description
+        float: left
+        width: 60%
+
+        .category
+          margin: 10px 0
+          font-style: italic
+          font-weight: bold
+          font-size: 12px
+      .price
+        float: left
+        width: 40%
+        font-size: 20px
