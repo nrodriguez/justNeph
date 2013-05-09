@@ -3,7 +3,7 @@
 / Page content
 .page-content
   - @products.each do |item|
-    = render :partial => "stores/item", :locals => {:item => item}
+    = render :partial => "store/item", :locals => {:item => item}
 
   #pager
     %ul

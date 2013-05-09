@@ -10,6 +10,6 @@ class Product < ActiveRecord::Base
   include Extensions::ProductExtension
 
   def fixed_name
-    name.gsub!("justNeph", "")
+    name.gsub("justNeph", "")
   end
 end

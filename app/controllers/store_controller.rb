@@ -1,6 +1,6 @@
-class StoresController < ApplicationController
+class StoreController < ApplicationController
   protect_from_forgery
-  layout "stores"
+  layout "store"
   def index
     @products = Product.order("created_at DESC")
   end
