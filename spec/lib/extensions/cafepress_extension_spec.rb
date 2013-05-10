@@ -1,7 +1,7 @@
 require 'spec_helper'
-include Extensions::CafepressExtension
+include Extensions::MerchantExtensions::CafepressExtension
 
-describe Extensions::CafepressExtension do
+describe Extensions::MerchantExtensions::CafepressExtension do
   describe "adding and creating items" do
     context "#add_items" do
       before do
@@ -9,7 +9,7 @@ describe Extensions::CafepressExtension do
       end
       it "properly adds the products" do
         VCR.use_cassette 'merchant/cafepress' do
-          add_items.size().should > 0
+          add_cafepress_items.size.should > 0
        end
       end
     end

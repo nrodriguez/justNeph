@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe StoresController, type: :controller do
-  context "GET /stores" do
+describe StoreController, type: :controller do
+  context "GET /store" do
     it "gets the collection of products" do
       FactoryGirl.create_list(:product, 10)
       get :index
