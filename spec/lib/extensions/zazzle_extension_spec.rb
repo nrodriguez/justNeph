@@ -10,6 +10,7 @@ describe Extensions::MerchantExtensions::ZazzleExtension do
       it "properly adds the products" do
         VCR.use_cassette 'merchant/zazzle', :record => :new_episodes do
           add_zazzle_items.size.should > 0
+          Product.last.price.should_not == 0.0
        end
       end
     end

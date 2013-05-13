@@ -16,7 +16,7 @@ module Extensions
           name: item[:title],
           description: item[:description],
           category: item[:keywords],
-          price: item[:price],
+          price: item[:price].gsub("$",""),
           active: true,
           merchant_id: Merchant.find_by_name("Zazzle").id,
           unique_id: item[:guid],
