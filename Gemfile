@@ -26,6 +26,7 @@ gem 'oauth'
 
 #Merchant API's
 gem "cafepress_api", :github => "nrodriguez/cafepress_api"
+gem "zazzle_rails"
 
 # Extension for rescue: this adds jobs
 gem 'redis'

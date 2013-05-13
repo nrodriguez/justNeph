@@ -8,7 +8,7 @@ describe Extensions::MerchantExtensions::CafepressExtension do
         FactoryGirl.create(:cafepress)
       end
       it "properly adds the products" do
-        VCR.use_cassette 'merchant/cafepress' do
+        VCR.use_cassette 'merchant/cafepress', :record => :new_episodes do
           add_cafepress_items.size.should > 0
        end
       end

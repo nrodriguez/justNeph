@@ -1,4 +1,3 @@
-#require 'cafepress-api'
 module Extensions
   module MerchantExtensions
     module CafepressExtension
@@ -6,12 +5,12 @@ module Extensions
         items = CafePressAPI.get_store_products('justnephmerch',Figaro.env.cafepress_key)
         items.each do |item|
           next if Product.exists?(:unique_id => item["id"])
-          create_item(item)
+          create_cafepress_item(item)
         end
       end
       #Creates a product from the cafepress hash
       #of an item
-      def create_item(item)
+      def create_cafepress_item(item)
         attr = {
           name: item["name"],
           description: item["description"],
