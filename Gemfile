@@ -12,10 +12,12 @@ gem 'figaro'
 gem 'rest-client'
 gem 'addressable'
 gem 'jquery-rails'
+gem 'activeadmin'
 
 #Front End
 gem 'sass-rails',   '~> 3.2.3'
 gem 'haml'
+
 # Twitter Bootstrap
 gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails'
