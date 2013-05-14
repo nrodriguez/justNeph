@@ -1,6 +1,6 @@
 module Extensions
   module MerchantExtensions
-    module SpreadshirtAPI
+    module SpreadshirtApi
       def self.get_products(store_id)
         raw_products = get_articles_parsed(store_id)
         products = []

@@ -1,7 +1,7 @@
 require 'spec_helper'
-include Extensions::MerchantExtensions::SpreadshirtAPI
+include Extensions::MerchantExtensions::SpreadshirtApi
 
-describe Extensions::MerchantExtensions::SpreadshirtAPI do
+describe Extensions::MerchantExtensions::SpreadshirtApi do
   describe "When retrieving the products" do
     context "#get_products" do
       it "properly retrieves the product list" do

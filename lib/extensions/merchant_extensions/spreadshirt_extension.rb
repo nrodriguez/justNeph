@@ -1,10 +1,10 @@
-include Extensions::MerchantExtensions::SpreadshirtAPI
+include Extensions::MerchantExtensions::SpreadshirtApi
 
 module Extensions
   module MerchantExtensions
     module SpreadshirtExtension
       def add_spreadshirt_items
-        products = SpreadshirtAPI.get_products("460970")
+        products = SpreadshirtApi.get_products("460970")
         products.each do |item|
           next if Product.exists?(:unique_id => item[:id])
           create_spreadshirt_item(item)

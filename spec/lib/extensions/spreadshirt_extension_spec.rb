@@ -10,7 +10,6 @@ describe Extensions::MerchantExtensions::SpreadshirtExtension do
       it "properly adds the products" do
         VCR.use_cassette 'merchant/spreadshirt', :record => :new_episodes do
           add_spreadshirt_items.size.should > 0
-          binding.pry
           Product.last.price.should_not == 0.0
        end
       end
