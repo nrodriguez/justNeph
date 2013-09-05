@@ -1,0 +1,12 @@
+// Page content
+#post-1.page-content.grid_8
+  %object#live_embed_player_flash{:bgcolor => "#000000", :data => "http://www.twitch.tv/widgets/live_embed_player.swf?channel=thegdstudio", :height => "400", :type => "application/x-shockwave-flash", :width => "400"}
+    %param{:name => "allowFullScreen", :value => "true"}/
+    %param{:name => "allowScriptAccess", :value => "always"}/
+    %param{:name => "allowNetworking", :value => "all"}/
+    %param{:name => "movie", :value => "http://www.twitch.tv/widgets/live_embed_player.swf"}/
+    %param{:name => "flashvars", :value => "hostname=www.twitch.tv&channel=thegdstudio&auto_play=true&start_volume=20"}/
+
+  %iframe#chat_embed{:frameborder => "0", :height => "400", :scrolling => "no", :src => "http://twitch.tv/chat/embed?channel=thegdstudio&popout_chat=true", :width => "300"}
+    / /Post content
+/ /Page content
