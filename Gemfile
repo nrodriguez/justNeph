@@ -12,7 +12,8 @@ gem 'figaro'
 gem 'rest-client'
 gem 'addressable'
 gem 'jquery-rails'
-gem 'activeadmin'
+gem "activeadmin", "~> 0.6.0", :git => "git://github.com/gregbell/active_admin.git"
+gem 'twitch'
 
 #Front End
 gem 'sass-rails',   '~> 3.2.3'
